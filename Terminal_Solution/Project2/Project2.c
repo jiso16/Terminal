@@ -5,6 +5,7 @@
 #include <io.h>
 #include <Windows.h>
 
+typedef enum { false, true } bool;
 struct _finddata_t fd;
 
 int isFileOrDir()
@@ -48,41 +49,62 @@ void FileSearch(char file_path[])
         {
             printf("파일명 : %s\n", file_pt);
         }
-        
+
     }
     _findclose(handle);
+}
+
+void initial_ls()
+{
+    char file_path[_MAX_PATH] = "C:\\dev\\Mini_Terminal";
+    FileSearch(file_path);
 }
 
 int main()
 {
     char command[10];
     char path[100] = { 'a' };
-    
-    while (1)
+    bool isCommand = true;
+
+    scanf("%s", &command);
+
+    if (strcmp(command, "ls") == 0)
+    {
+        initial_ls();
+        isCommand = true;
+    }
+    else
+    {
+        printf("파일 목록이 없습니다");
+        isCommand = false;
+    }
+
+    while (isCommand == true)
     {
         scanf("%s", &command);
-
-        if (strcmp(command, "ls") == 0)
-        {
-            char file_path[_MAX_PATH] = "C:\\dev\\Mini_Terminal\\Terminal_Solution";
-            FileSearch(file_path);
-        }
-
-        else
-        {
-            scanf("%s", &path);
-        }
 
 
         if (strcmp(command, "cd") == 0)
         {
+            scanf("%s", &path);
             char file_path[_MAX_PATH] = { 'a' };
             strcpy(file_path, path);
-            printf("\n file_path : %s \n path : %s\n", file_path, path);
-            FileSearch(file_path);
         }
+
+        else if (strcmp(command, "ls") == 0)
+        {
+            char file_path[_MAX_PATH] = { 'a' };
+            strcpy(file_path, path);
+            FileSearch(file_path);
+
+        }
+
+        else
+        {
+            printf("파일 목록이 없습니다");
+        }
+        printf("\n");
     }
-      
     return 0;
 
 }
