@@ -83,27 +83,33 @@ int main()
 
 
         if (strcmp(command, "cd") == 0)
-        {
+        { 
             scanf("%s", &path);
+
+            printf("1: %s\n", path2);
+        if (strcmp(path, "..") == 0)
+            {
+            printf("들어왔딷");
+            printf("2: %s\n", path2);
+            }
             char file_path[_MAX_PATH] = { 'a' };
             strcpy(file_path, path);
-            strcpy(file_path, path2);
-            if (strcmp(path, "..") == 0)
-            {
+            strcpy(path2,file_path );
 
-            }
+            printf("3: %s\n", path2);
             // path2에 path랑 동일한 값 저장
         }
 
         else if (strcmp(command, "ls") == 0)
         {
+
             char file_path[_MAX_PATH] = { 'a' };
             strcpy(file_path, path);
             FileSearch(file_path);
-
-        
-
+          
+            printf("4: %s\n", path2);
         }
+     
 
         printf("\n");
     }
