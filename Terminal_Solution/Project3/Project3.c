@@ -17,8 +17,7 @@ int isFileOrDir()
         return 1; // 그밖의 경우는 "존재하는 파일"이기에 1 반환
 
 }
-
-void FileSearch(char file_path[])
+int FileSearch(char file_path[])
 {
     intptr_t handle;
     int check = 0;
@@ -30,8 +29,8 @@ void FileSearch(char file_path[])
 
     if ((handle = _findfirst(file_path, &fd)) == -1)
     {
-        printf("No such file or directory\n");
-        return;
+        //printf("No such file or directory\n");
+        return 3;
     }
 
     while (_findnext(handle, &fd) == 0)
@@ -54,13 +53,32 @@ void FileSearch(char file_path[])
     _findclose(handle);
 }
 
+int File_check(file_path)
+{
+    intptr_t handle;
+    char file_path2[_MAX_PATH];
+
+    //strcat(file_path, "\\");
+    strcpy(file_path2, file_path);
+    //strcat(file_path, "*");
+
+    if ((handle = _findfirst(file_path, &fd)) == -1)
+    {
+        //printf("No such file or directory\n");
+        return 3;
+    }
+}
+
 int main()
 {
     char command[10];
     char path[100]=" ";
     char path2[_MAX_PATH] = "C:\\dev\\Terminal";
+    char path3[_MAX_PATH] = "C:\\dev\\Terminal";
     char file_path[_MAX_PATH] = "C:\\dev\\Terminal";
-
+    char upperDir[100] = "";
+    int check = 0;
+    int len = 0;
 
     scanf("%s", &command);
 
@@ -74,7 +92,7 @@ int main()
         printf("No File\n\n");
     }
 
-    while (1)
+while (1)
     {
         
         scanf("%s", &command);
@@ -86,13 +104,40 @@ int main()
             scanf("%s", &path);
             strcat(path2, path); 
             strcpy(file_path, path2);
+            printf("path:%s", file_path);
+
+            check = File_check(file_path);
+            if (check == 3)
+            {
+                printf("\nno file");
+                strcpy(file_path, path3);
+                strcpy(path2, file_path);
+            }
+            else
+            {
+                strcpy(path3, file_path);
+            }
+
         }
 
         else if (strcmp(command, "ls") == 0)
         {
             FileSearch(file_path);
-            strcpy(file_path, path2);
+            //strcpy(file_path, path3);
 
+        }
+        else if (strcmp(command, "..") == 0)
+        {
+            char* ptr = strrchr(path2, '\\');
+            len = strlen(path2) - strlen(ptr);
+            for (int i = 0; i < len; i++)
+            {
+                upperDir[i] = path2[i];
+            }
+            strcpy(file_path, upperDir);
+            strcpy(path2, upperDir);
+            printf("path: %s", upperDir);
+            printf("path2: %s", path2);
         }
 
         printf("\n");
