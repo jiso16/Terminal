@@ -79,12 +79,14 @@ int main()
     char upperDir[100] = "";
     int check = 0;
     int len = 0;
+    int len2 = 0;
 
     scanf("%s", &command);
 
     if (strcmp(command, "ls") == 0)
     {
         FileSearch(file_path);
+        strcpy(file_path, path2);
     }
     else
     {
@@ -92,7 +94,7 @@ int main()
         printf("No File\n\n");
     }
 
-while (1)
+    while (1)
     {
         
         scanf("%s", &command);
@@ -118,13 +120,18 @@ while (1)
                 strcat(path2, "\\");
                 strcat(path2, path);
                 strcpy(file_path, path2);
-                printf("path:%s", file_path);
 
                 check = File_check(file_path);
                 if (check == 3)
                 {
-                    printf("\nno file");
-                    strcpy(file_path, path3);
+                    char originDir[100] = "";
+                    char* ptr2 = strrchr(file_path, '\\');
+                    len2 = strlen(file_path) - strlen(ptr2);
+                    for (int i = 0; i < len2; i++)
+                    {
+                        originDir[i] = file_path[i];
+                    }
+                    strcpy(file_path, originDir);
                     strcpy(path2, file_path);
                 }
                 else
