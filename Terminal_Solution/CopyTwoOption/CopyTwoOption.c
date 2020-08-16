@@ -6,6 +6,8 @@
 #include <string.h>
 #include <io.h>
 #include <Windows.h>
+#include <direct.h>
+#include <errno.h>
 
 struct _finddata_t fd;
 
@@ -71,13 +73,20 @@ int File_check(file_path)
 
 int main()
 {
+    FILE* sfp;
+    FILE* dfp;
+    char source[_MAX_PATH], dest[_MAX_PATH];
+    char copy;
     char command[10];
-    char path[100]=" ";
+    char path[100] = " ";
     char path2[_MAX_PATH] = "C:\\dev\\Terminal";
     char path3[_MAX_PATH] = "";
     char file_path[_MAX_PATH] = "C:\\dev\\Terminal";
     char upperDir[100] = "";
+    char pathName[20] = "";
+    char copyPath[_MAX_PATH] = "";
     int check = 0;
+    int check2 = 0;
     int len = 0;
     int len2 = 0;
 
@@ -96,14 +105,14 @@ int main()
 
     while (1)
     {
-        
+
         scanf("%s", &command);
 
         if (strcmp(command, "cd") == 0)
         {
             scanf("%s", &path);
 
-            if(strcmp(path,"..")==0)
+            if (strcmp(path, "..") == 0)
             {
                 char upperDir[100] = "";
                 char* ptr = strrchr(path2, '\\');
@@ -136,19 +145,112 @@ int main()
                 }
                 else
                 {
-                    strcpy(path3, file_path);
+                    strcpy(path2, file_path);
                 }
             }
-           
+
         }
 
         else if (strcmp(command, "ls") == 0)
         {
             FileSearch(file_path);
             strcpy(file_path, path2);
+            printf("%s", file_path);
+        }
+        else if (strcmp(command, "cp") == 0)
+        {
+            scanf("%s", &pathName);
+            strcat(path2, "\\");
+            strcat(path2, pathName);
+            strcpy(file_path, path2);
+
+            check2 = File_check(file_path);
+
+            if (check2 == 3)
+            {
+                check2 = File_check(pathName);
+                if (check == 3)
+                {
+                    continue;
+                }
+                else
+                {
+                    scanf("%s", &copyPath);
+                    char originDir[100] = "";
+                    char* ptr2 = strrchr(copyPath, '\\');
+                    len2 = strlen(copyPath) - strlen(ptr2);
+                    for (int i = 0; i < len2; i++)
+                    {
+                        originDir[i] = copyPath[i];
+                    }
+                    //strcpy(copyPath, originDir);
+                    //strcpy(path2, file_path);
+
+                    check2 = File_check(originDir);
+                    if (check2 == 3)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        sfp = fopen(file_path, "r");
+                        dfp = fopen(copyPath, "w");
+
+                        while (!feof(sfp))
+                        {
+                            copy = fgetc(sfp);
+                            fputc(copy, dfp);
+                        }
+
+                        fclose(sfp);
+                        fclose(dfp);
+                    }
+                }
+                char originDir[100] = "";
+                char* ptr2 = strrchr(file_path, '\\');
+                len2 = strlen(file_path) - strlen(ptr2);
+                for (int i = 0; i < len2; i++)
+                {
+                    originDir[i] = file_path[i];
+                }
+                strcpy(file_path, originDir);
+                strcpy(path2, file_path);
+            }
+            else
+            {
+                scanf("%s", &copyPath);
+                char originDir[100] = "";
+                char* ptr2 = strrchr(copyPath, '\\');
+                len2 = strlen(copyPath) - strlen(ptr2);
+                for (int i = 0; i < len2; i++)
+                {
+                    originDir[i] = copyPath[i];
+                }
+                //strcpy(copyPath, originDir);
+                //strcpy(path2, file_path);
+
+                check2 = File_check(originDir);
+                if (check2 == 3)
+                {
+                    continue;
+                }
+                else
+                {
+                    sfp = fopen(file_path, "r");
+                    dfp = fopen(copyPath, "w");
+
+                    while (!feof(sfp))
+                    {
+                        copy = fgetc(sfp);
+                        fputc(copy, dfp);
+                    }
+
+                    fclose(sfp);
+                    fclose(dfp);
+                }
+            }
         }
         printf("\n");
     }
     return 0;
-
 }

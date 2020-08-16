@@ -5,3 +5,12 @@ Terminal_Solution/Project2/x64/Debug
 Terminal_Solution/x64/Debug
 Terminal_Solution/Project1/Debug
 Terminal_Solution/Project3/Debug
+Terminal_Solution/copyFile
+Terminal_Solution/CopyTwoOption/Debug
+*.vcxproj
+*.filters
+*.user
+Terminal_Solution/sourceFile
+Terminal_Solution/TerminalAndCopy/Debug
+Terminal_Solution/TerminalProject/Debug
+*.sln
