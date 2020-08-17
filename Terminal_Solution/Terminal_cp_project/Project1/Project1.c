@@ -31,7 +31,6 @@ int FileSearch(char file_path[])
 
     if ((handle = _findfirst(file_path, &fd)) == -1)
     {
-        //printf("No such file or directory\n");
         return 3;
     }
 
@@ -60,13 +59,10 @@ int File_check(file_path)
     intptr_t handle;
     char file_path2[_MAX_PATH];
 
-    //strcat(file_path, "\\");
     strcpy(file_path2, file_path);
-    //strcat(file_path, "*");
 
     if ((handle = _findfirst(file_path, &fd)) == -1)
     {
-        //printf("No such file or directory\n");
         return 3;
     }
 }
@@ -115,20 +111,18 @@ int main()
             if (strcmp(path, "..") == 0)
             {
                 char upperDir[100] = "";
-                char* ptr = strrchr(path2, '\\');
-                len = strlen(path2) - strlen(ptr);
+                char* ptr = strrchr(file_path, '\\');
+                len = strlen(file_path) - strlen(ptr);
                 for (int i = 0; i < len; i++)
                 {
-                    upperDir[i] = path2[i];
+                    upperDir[i] = file_path[i];
                 }
                 strcpy(file_path, upperDir);
-                strcpy(path2, upperDir);
             }
             else
             {
-                strcat(path2, "\\");
-                strcat(path2, path);
-                strcpy(file_path, path2);
+                strcat(file_path, "\\");
+                strcat(file_path, path);
 
                 check = File_check(file_path);
                 if (check == 3)
@@ -141,11 +135,10 @@ int main()
                         originDir[i] = file_path[i];
                     }
                     strcpy(file_path, originDir);
-                    strcpy(path2, file_path);
                 }
                 else
                 {
-                    strcpy(path2, file_path);
+                    continue;
                 }
             }
 
@@ -154,21 +147,31 @@ int main()
         else if (strcmp(command, "ls") == 0)
         {
             FileSearch(file_path);
-            strcpy(file_path, path2);
-            printf("%s", file_path);
+            char originDir[100] = "";
+            char* ptr2 = strrchr(file_path, '\\');
+
+            len2 = strlen(file_path) - strlen(ptr2);
+            for (int i = 0; i < len2; i++)
+            {
+                originDir[i] = file_path[i];
+            }
+            strcpy(file_path, originDir);
         }
         else if (strcmp(command, "cp") == 0)
         {
             scanf("%s", &pathName);
-            strcat(path2, "\\");
-            strcat(path2, pathName);
-            strcpy(file_path, path2);
-
+            
+            strcpy(path2, file_path);
+            strcat(file_path, "\\");
+            strcat(file_path, pathName);
+            
             check2 = File_check(file_path);
 
             if (check2 == 3)
             {
+                strcpy(file_path, path2);
                 check2 = File_check(pathName);
+                
                 if (check == 3)
                 {
                     continue;
@@ -183,8 +186,6 @@ int main()
                     {
                         originDir[i] = copyPath[i];
                     }
-                    //strcpy(copyPath, originDir);
-                    //strcpy(path2, file_path);
 
                     check2 = File_check(originDir);
                     if (check2 == 3)
@@ -193,7 +194,7 @@ int main()
                     }
                     else
                     {
-                        sfp = fopen(file_path, "r");
+                        sfp = fopen(pathName, "r");
                         dfp = fopen(copyPath, "w");
 
                         while (!feof(sfp))
@@ -206,15 +207,6 @@ int main()
                         fclose(dfp);
                     }
                 }
-                char originDir[100] = "";
-                char* ptr2 = strrchr(file_path, '\\');
-                len2 = strlen(file_path) - strlen(ptr2);
-                for (int i = 0; i < len2; i++)
-                {
-                    originDir[i] = file_path[i];
-                }
-                strcpy(file_path, originDir);
-                strcpy(path2, file_path);
             }
             else
             {
@@ -226,8 +218,6 @@ int main()
                 {
                     originDir[i] = copyPath[i];
                 }
-                //strcpy(copyPath, originDir);
-                //strcpy(path2, file_path);
 
                 check2 = File_check(originDir);
                 if (check2 == 3)
@@ -248,6 +238,7 @@ int main()
                     fclose(sfp);
                     fclose(dfp);
                 }
+                strcpy(file_path, path2);
             }
         }
         printf("\n");
