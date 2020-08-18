@@ -81,6 +81,9 @@ int main()
     char upperDir[100] = "";
     char pathName[20] = "";
     char copyPath[_MAX_PATH] = "";
+    char mkFolder[_MAX_PATH] = "";
+    char folderName[20] = "";
+    char rmFolder[_MAX_PATH] = "";
     int check = 0;
     int check2 = 0;
     int len = 0;
@@ -160,18 +163,18 @@ int main()
         else if (strcmp(command, "cp") == 0)
         {
             scanf("%s", &pathName);
-            
+
             strcpy(path2, file_path);
             strcat(file_path, "\\");
             strcat(file_path, pathName);
-            
+
             check2 = File_check(file_path);
 
             if (check2 == 3)
             {
                 strcpy(file_path, path2);
                 check2 = File_check(pathName);
-                
+
                 if (check == 3)
                 {
                     continue;
@@ -239,6 +242,42 @@ int main()
                     fclose(dfp);
                 }
                 strcpy(file_path, path2);
+            }
+        }
+        else if (strcmp(command, "mkdir") == 0)
+        {
+            strcpy(mkFolder, file_path);
+            scanf("%s", folderName);
+            strcat(mkFolder, "//");
+            strcat(mkFolder, folderName);
+
+            int nResult = _mkdir(mkFolder);
+
+            if (nResult == 0)
+            {
+                continue;
+            }
+            else if (nResult == -1)
+            {
+                continue;
+            }
+        }
+        else if (strcmp(command, "rmdir") == 0)
+        {
+            strcpy(rmFolder, file_path);
+            scanf("%s", folderName);
+            strcat(rmFolder, "//");
+            strcat(rmFolder, folderName);
+
+            int pResult = _rmdir(rmFolder);
+
+            if (pResult == 0)
+            {
+                continue;
+            }
+            else if (pResult == -1)
+            {
+                continue;
             }
         }
         printf("\n");
