@@ -1,5 +1,18 @@
 #include "terminal.h"
 
+
+extern FILE* sfp;
+extern FILE* dfp;
+extern char source[_MAX_PATH], dest[_MAX_PATH];
+extern char copy;
+extern char path2[_MAX_PATH];
+extern char file_path[_MAX_PATH];
+extern char pathName[20];
+extern char copyPath[_MAX_PATH];
+extern int check;
+extern int check2;
+extern int len;
+
 void CpCheck()
 {
     scanf("%s", &pathName);
@@ -15,7 +28,7 @@ void CpCheck()
         strcpy(file_path, path2);
         check2 = FileCheck(pathName);
 
-        if (check == 3)
+        if (check2 == 3)
         {
             printf("\n");
         }

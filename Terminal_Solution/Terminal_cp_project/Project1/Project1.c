@@ -1,5 +1,10 @@
 #include "terminal.h"
 
+void MkDir();
+void RmDir();
+void LsCheck();
+
+
 FILE* sfp;
 FILE* dfp;
 char source[_MAX_PATH], dest[_MAX_PATH];
@@ -117,3 +122,4 @@ void RmDir()
         printf("\n");
     }
 }
+

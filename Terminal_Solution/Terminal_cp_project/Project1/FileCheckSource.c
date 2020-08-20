@@ -1,5 +1,10 @@
 #include "terminal.h"
 
+extern char source[_MAX_PATH], dest[_MAX_PATH];
+extern char path2[_MAX_PATH];
+extern char file_path[_MAX_PATH];
+extern int check;
+
 int isFileOrDir()
 {
     if (fd.attrib & _A_SUBDIR)

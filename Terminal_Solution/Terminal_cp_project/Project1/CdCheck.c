@@ -1,5 +1,11 @@
 #include "terminal.h"
 
+extern char path[100] ;
+extern char file_path[_MAX_PATH];
+extern char upperDir[100];
+extern int check;
+extern int len;
+
 void CdCheck()
 {
     scanf("%s", &path);
@@ -14,6 +20,7 @@ void CdCheck()
             upperDir[i] = file_path[i];
         }
         strcpy(file_path, upperDir);
+        printf("\n");
     }
     else
     {
