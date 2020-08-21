@@ -7,7 +7,6 @@ void LsCheck();
 
 FILE* sfp;
 FILE* dfp;
-char source[_MAX_PATH], dest[_MAX_PATH];
 char copy;
 char command[10];
 char path[100] = " ";
@@ -37,7 +36,6 @@ int main()
     else
     {
         main();
-        printf("No File\n\n");
     }
 
     while (1)
