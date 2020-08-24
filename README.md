@@ -1,6 +1,7 @@
 # Mini Terminal
+C언어로 리눅스 명령어를 실행하는 프로그램
 
-![시작할때ls](https://user-images.githubusercontent.com/66424045/90885344-5f5def00-e3ec-11ea-9384-7eadea6edf33.PNG "프로그램 시작할때 명령어")
+## 명령어 정리
 
 1. cd
  
@@ -56,5 +57,5 @@
 ![상위디렉으로이동](https://user-images.githubusercontent.com/66424045/90889671-89ff7600-e3f3-11ea-95b8-ad1398d8276b.PNG "")
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzgzNTIxN119
+eyJoaXN0b3J5IjpbLTEzNzM2OTUxNDBdfQ==
 -->
