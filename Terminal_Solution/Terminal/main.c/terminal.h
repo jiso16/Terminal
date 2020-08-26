@@ -10,7 +10,6 @@
 #include <Windows.h>
 #include <direct.h>
 #include <errno.h>
-#include "terminal.h"
 
 struct _finddata_t fd;
 
@@ -19,3 +18,5 @@ int FileSearch(char file_path[]);
 int FileCheck(file_path);
 void CdCheck();
 void CpCheck();
+void RmFuntion();
+void RmBackslash();

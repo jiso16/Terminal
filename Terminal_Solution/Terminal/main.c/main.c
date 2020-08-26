@@ -3,24 +3,22 @@
 void MkDir();
 void RmDir();
 void LsCheck();
-int Rm(char file_path[]);
-void RmFile();
-
 
 FILE* sfp;
 FILE* dfp;
 char copy;
 char command[10];
 char path[100] = " ";
-char path2[_MAX_PATH] = "C:\\dev\\Terminal";
+char path2[_MAX_PATH] = "C:";
 char path3[_MAX_PATH] = "";
-char file_path[_MAX_PATH] = "C:\\dev\\Terminal";
+char file_path[_MAX_PATH] = "C:";
 char upperDir[100] = "";
 char pathName[20] = "";
 char copyPath[_MAX_PATH] = "";
 char mkFolder[_MAX_PATH] = "";
 char folderName[20] = "";
 char rmFolder[_MAX_PATH] = "";
+//char strPath[_MAX_PATH] = "";
 int check = 0;
 int check2 = 0;
 int len = 0;
@@ -56,7 +54,7 @@ int main()
         }
         else if (strcmp(command, "rm") == 0)
         {
-            Rm(file_path);
+            RmFuntion();
         }
     }
     return 0;
@@ -65,15 +63,7 @@ int main()
 void LsCheck()
 {
     FileSearch(file_path);
-    char originDir[100] = "";
-    char* ptr = strrchr(file_path, '\\');
-
-    len = strlen(file_path) - strlen(ptr);
-    for (int i = 0; i < len; i++)
-    {
-        originDir[i] = file_path[i];
-    }
-    strcpy(file_path, originDir);
+    RmBackslash();
     printf("\n");
 }
 
@@ -115,56 +105,3 @@ void RmDir()
         printf("\n");
     }
 }
-
-int Rm(char file_path[])
-{
-    intptr_t handle;
-    int check = 0;
-    char file_path2[_MAX_PATH];
-
-    strcat(file_path, "\\");
-    strcpy(file_path2, file_path);
-    strcat(file_path, "*");
-
-    if ((handle = _findfirst(file_path, &fd)) == -1)
-    {
-        return 3;
-    }
-
-    while (_findnext(handle, &fd) == 0)
-    {
-        char file_pt[_MAX_PATH];
-        strcpy(file_pt, file_path2);
-
-        check = isFileOrDir();    //파일인지 디렉토리 인지 식별
-
-        if (check == 0 && fd.name[0] != '.')
-        {
-            //파일명 호출
-            RmFile();
-        }
-        else if (check == 1 && fd.size != 0 && fd.name[0] != '.')
-        {
-            printf("%s\n", fd.name);
-        }
-
-    }
-    _findclose(handle);
-}
-
-void RmFile()
-{
-    char strPath = file_path;
-
-    int Result = remove(strPath);
-
-    if (Result == 0)
-    {
-        printf("파일 삭제 성공\n");
-    }
-    else if (Result == -1)
-    {
-        perror("파일 삭제 실패\n");
-    }
-}
-

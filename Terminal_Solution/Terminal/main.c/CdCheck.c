@@ -30,14 +30,7 @@ void CdCheck()
         check = FileCheck(file_path);
         if (check == 3)
         {
-            char originDir[100] = "";
-            char* ptr = strrchr(file_path, '\\');
-            len = strlen(file_path) - strlen(ptr);
-            for (int i = 0; i < len; i++)
-            {
-                originDir[i] = file_path[i];
-            }
-            strcpy(file_path, originDir);
+            RmBackslash();
             printf("\n");
         }
         else
