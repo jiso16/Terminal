@@ -1,5 +1,5 @@
 # Mini Terminal
-C언어로 리눅스 명령어를 실행하는 프로그램
+리눅스 명령어를 실행하는 ㅊ프로그램
 
 ## 명령어 정리
 
@@ -62,5 +62,6 @@ C언어로 리눅스 명령어를 실행하는 프로그램
 ![상위디렉으로이동](https://user-images.githubusercontent.com/66424045/90889671-89ff7600-e3f3-11ea-95b8-ad1398d8276b.PNG "")
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzkxNDY3ODkxLC0xMzczNjk1MTQwXX0=
+eyJoaXN0b3J5IjpbLTEwNDIwMzM5NDAsLTEzNzM2OTUxNDBdfQ
+==
 -->
