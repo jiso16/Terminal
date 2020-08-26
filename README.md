@@ -64,8 +64,8 @@
 
 ## CpCheck 함수 설명
 
-1. cp
+1. cp [복사할 소스파일명] [복사되는 폴더의 경로와 저장할 파일명]을 입력하면 []
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5OTMzOTkzMiwtMTM3MzY5NTE0MF19
+eyJoaXN0b3J5IjpbMTcwMDEwMjgzMCwtMTM3MzY5NTE0MF19
 -->
