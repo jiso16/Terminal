@@ -1,5 +1,5 @@
 # Mini Terminal
-리눅스 명령어를 실행하는 ㅊ프로그램
+리눅스 명령어를 사용할 수 있도록 C언어로 구현한 프로그램
 
 ## 명령어 정리
 
@@ -62,6 +62,6 @@
 ![상위디렉으로이동](https://user-images.githubusercontent.com/66424045/90889671-89ff7600-e3f3-11ea-95b8-ad1398d8276b.PNG "")
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNDIwMzM5NDAsLTEzNzM2OTUxNDBdfQ
+eyJoaXN0b3J5IjpbLTE4MTM4ODA5NTgsLTEzNzM2OTUxNDBdfQ
 ==
 -->
