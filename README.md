@@ -61,7 +61,11 @@
  
 ![상위디렉으로이동](https://user-images.githubusercontent.com/66424045/90889671-89ff7600-e3f3-11ea-95b8-ad1398d8276b.PNG "")
 
+
+## CpCheck 함수 설명
+
+1. cp
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTM4ODA5NTgsLTEzNzM2OTUxNDBdfQ
-==
+eyJoaXN0b3J5IjpbLTY5OTMzOTkzMiwtMTM3MzY5NTE0MF19
 -->
