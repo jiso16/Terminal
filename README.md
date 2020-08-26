@@ -70,13 +70,13 @@
 
 
 
-3.  cp [복사할 소스 파일의 경로] [복사되는 폴더의 경로와 저장할 파일명]을 입력하면 정상적인 경로인지 확인 후 입력한 경로에 파일이 복사됩니다.
+2.  cp [복사할 소스 파일의 경로] [복사되는 폴더의 경로와 저장할 파일명]을 입력하면 정상적인 경로인지 확인 후 입력한 경로에 파일이 복사됩니다.
 
 
 ![다른경로의 파일 복사](https://user-images.githubusercontent.com/66424045/91271034-86ce0680-e7b4-11ea-97a6-6db47a54e968.PNG "다른경로의 파일 복사")
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxOTQwMDY2MCwxNjE3NTg4NDQyLC0xMz
-czNjk1MTQwXX0=
+eyJoaXN0b3J5IjpbMTIxOTUwMTk3LDE2MTc1ODg0NDIsLTEzNz
+M2OTUxNDBdfQ==
 -->
