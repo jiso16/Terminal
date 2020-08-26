@@ -36,7 +36,7 @@ C언어로 리눅스 명령어를 실행하는 프로그램
  6. rm
     -rm [제거할 디렉토리명]을 입력하면 현재경로에 존재하는 디렉토리인지 확인 후 디렉토리 안에 있는 파일까지 한번에 제거합니다.
     
-  -현재 경로에 없는 디렉토리명을 입력하면 아무 동작도 하지 않습니다.
+    -현재 경로에 없는 디렉토리명을 입력하면 아무 동작도 하지 않습니다.
  
 
  ## CdCheck함수 동작 설명
@@ -61,5 +61,5 @@ C언어로 리눅스 명령어를 실행하는 프로그램
 ![상위디렉으로이동](https://user-images.githubusercontent.com/66424045/90889671-89ff7600-e3f3-11ea-95b8-ad1398d8276b.PNG "")
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0OTA2OTgyNSwtMTM3MzY5NTE0MF19
+eyJoaXN0b3J5IjpbMTIyMjA0MzUxOSwtMTM3MzY5NTE0MF19
 -->
