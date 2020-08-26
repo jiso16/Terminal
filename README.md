@@ -75,8 +75,8 @@
 
 ![다른경로의 파일 복사](https://user-images.githubusercontent.com/66424045/91271034-86ce0680-e7b4-11ea-97a6-6db47a54e968.PNG "다른경로의 파일 복사")
 
-3. 만약 어느경우라도 경로가 잘 못 되었다면 아무 동작도 하지 않습니다.
+3. 만약 어느 경우라도 경로가 잘 못 되었다면 아무 동작도 하지 않습니다.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzNDk2ODk2MSwxNjE3NTg4NDQyLC0xMz
-czNjk1MTQwXX0=
+eyJoaXN0b3J5IjpbNjM1MDM1MjExLDE2MTc1ODg0NDIsLTEzNz
+M2OTUxNDBdfQ==
 -->
