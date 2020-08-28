@@ -100,8 +100,18 @@
 
 3. 제거할 디렉토리가 현재경로에 없다면 아무 동작도 하지 않습니다.
 
+![rmdir](https://user-images.githubusercontent.com/66424045/91553402-4b743900-e968-11ea-8d13-a7e652acc905.PNG)
+
+
+## rm 명령어
+
+1. rm [제거할 디렉토리명]을 입력하면 입력한 디렉토리가 삭제됩니다.
+
+2. 디렉토리 안에 파일이 존재한다면 파일들을 삭제한 후 디렉토리도 삭제합니다.
+
+3. 제거할 디렉토리가 현재경로에 없다면 아무 동작ㄷ
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg5MTA2OTMwMywtODc2NDA1MjAsLTExMD
-IwMTcwNjYsNjA0MjQ2MTUsNjM1MDM1MjExLDE2MTc1ODg0NDIs
-LTEzNzM2OTUxNDBdfQ==
+eyJoaXN0b3J5IjpbNTEyMTE0NTcxLC04NzY0MDUyMCwtMTEwMj
+AxNzA2Niw2MDQyNDYxNSw2MzUwMzUyMTEsMTYxNzU4ODQ0Miwt
+MTM3MzY5NTE0MF19
 -->
