@@ -61,6 +61,15 @@
  
 ![상위디렉으로이동](https://user-images.githubusercontent.com/66424045/90889671-89ff7600-e3f3-11ea-95b8-ad1398d8276b.PNG "")
 
+## ls 명령어
+1. ls를 입력하면 현재 경로에 존재하는 폴더명/파일명을 출력합니다.
+
+2. 잘못 된 경로일 경우 아무것도 출력하지 않습니다.
+
+
+
+
+
 
 ## cp 명령어
 
@@ -79,6 +88,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODgwNjY3NCw2MzUwMzUyMTEsMTYxNz
+eyJoaXN0b3J5IjpbLTk1MjY4NzY1MSw2MzUwMzUyMTEsMTYxNz
 U4ODQ0MiwtMTM3MzY5NTE0MF19
 -->
