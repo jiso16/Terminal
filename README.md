@@ -56,13 +56,11 @@
 
 
 
-
-
-  - path가 ".."일때
+2. cd .. 을 입력하면 현재 경로에서 한 단계 위의 상위 디렉토리로 경로를 이동합니다.
   
-     -현재 경로에서 한 단계 위의 상위 디렉토리로 경로를 이동합니다.
  
-![상위디렉으로이동](https://user-images.githubusercontent.com/66424045/90889671-89ff7600-e3f3-11ea-95b8-ad1398d8276b.PNG "")
+![uppercd](https://user-images.githubusercontent.com/66424045/91552495-df450580-e966-11ea-82e7-29fd55b040cf.PNG)
+
 
 
 
@@ -83,7 +81,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkxMjQzNjcxOCwtMTEwMjAxNzA2Niw2MD
+eyJoaXN0b3J5IjpbLTg4NTg2MjU0NCwtMTEwMjAxNzA2Niw2MD
 QyNDYxNSw2MzUwMzUyMTEsMTYxNzU4ODQ0MiwtMTM3MzY5NTE0
 MF19
 -->
