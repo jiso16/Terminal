@@ -108,10 +108,15 @@
 1. rm [제거할 디렉토리명]을 입력하면 입력한 디렉토리가 삭제됩니다.
 
 2. 디렉토리 안에 파일이 존재한다면 파일들을 삭제한 후 디렉토리도 삭제합니다.
+ 
+    -rmdir 명령어와의 차이점
+ 
+3. 제거할 디렉토리가 현재경로에 없다면 아무 동작도 하지 않습니다.
 
-3. 제거할 디렉토리가 현재경로에 없다면 아무 동작ㄷ
+![rm](https://user-images.githubusercontent.com/66424045/91553572-99893c80-e968-11ea-803e-d205d5ed2b98.PNG)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEyMTE0NTcxLC04NzY0MDUyMCwtMTEwMj
-AxNzA2Niw2MDQyNDYxNSw2MzUwMzUyMTEsMTYxNzU4ODQ0Miwt
-MTM3MzY5NTE0MF19
+eyJoaXN0b3J5IjpbLTE5MDU1ODE4NjEsLTg3NjQwNTIwLC0xMT
+AyMDE3MDY2LDYwNDI0NjE1LDYzNTAzNTIxMSwxNjE3NTg4NDQy
+LC0xMzczNjk1MTQwXX0=
 -->
