@@ -86,9 +86,15 @@
 3. 어느 경우라도 경로가 잘 못 되었다면 아무 동작도 하지 않습니다.
 
 ## mkdir 명령어
-1 
+1. mkidr[생성할 디렉토리명]을 입력하면 현재 경로에 비어있는 디렉토리가 생성됩니다.
+
+![mkdir](https://user-images.githubusercontent.com/66424045/91553186-f33d3700-e967-11ea-9eb1-20f60fb86a7a.PNG)
+
+
+## rmdir 명령어
+1. rmdir[제거하려]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0NTAyMjY5MSwtODc2NDA1MjAsLTExMD
+eyJoaXN0b3J5IjpbMTkyODc4OTQwMiwtODc2NDA1MjAsLTExMD
 IwMTcwNjYsNjA0MjQ2MTUsNjM1MDM1MjExLDE2MTc1ODg0NDIs
 LTEzNzM2OTUxNDBdfQ==
 -->
