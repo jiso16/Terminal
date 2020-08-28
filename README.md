@@ -88,13 +88,20 @@
 ## mkdir 명령어
 1. mkidr[생성할 디렉토리명]을 입력하면 현재 경로에 비어있는 디렉토리가 생성됩니다.
 
+2. 생성할 디렉토리랑 똑같으 디렉토리가 이미 존재한다면 아무 동작도 하지 않습니다.
+
 ![mkdir](https://user-images.githubusercontent.com/66424045/91553186-f33d3700-e967-11ea-9eb1-20f60fb86a7a.PNG)
 
 
 ## rmdir 명령어
-1. rmdir[제거하려]
+1. rmdir[제거할 디렉토리명]을 입력하면 입력한 디렉토리가 삭제됩니다.
+
+2. 빈 디렉토리만 지워집니다.
+
+3. 제거할 디렉토리가 현재경로에 없다면 아무 동작도 하지 않습니다.
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyODc4OTQwMiwtODc2NDA1MjAsLTExMD
+eyJoaXN0b3J5IjpbMTg5MTA2OTMwMywtODc2NDA1MjAsLTExMD
 IwMTcwNjYsNjA0MjQ2MTUsNjM1MDM1MjExLDE2MTc1ODg0NDIs
 LTEzNzM2OTUxNDBdfQ==
 -->
