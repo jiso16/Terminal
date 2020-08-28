@@ -39,6 +39,11 @@
     
     -현재 경로에 없는 디렉토리명을 입력하면 아무 동작도 하지 않습니다.
  
+## ls 명령어
+1. ls를 입력하면 현재 경로에 존재하는 폴더명/파일명을 출력합니다.
+
+2. 잘못 된 경로일 경우 아무것도 출력하지 않습니다.
+
 
  ## cd 명령어
 
@@ -61,11 +66,6 @@
  
 ![상위디렉으로이동](https://user-images.githubusercontent.com/66424045/90889671-89ff7600-e3f3-11ea-95b8-ad1398d8276b.PNG "")
 
-## ls 명령어
-1. ls를 입력하면 현재 경로에 존재하는 폴더명/파일명을 출력합니다.
-
-2. 잘못 된 경로일 경우 아무것도 출력하지 않습니다.
-
 
 
 ## cp 명령어
@@ -85,6 +85,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjA0MjQ2MTUsNjM1MDM1MjExLDE2MTc1OD
-g0NDIsLTEzNzM2OTUxNDBdfQ==
+eyJoaXN0b3J5IjpbLTE1NjMxMzg4MSw2MDQyNDYxNSw2MzUwMz
+UyMTEsMTYxNzU4ODQ0MiwtMTM3MzY5NTE0MF19
 -->
