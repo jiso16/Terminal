@@ -40,7 +40,7 @@
     -현재 경로에 없는 디렉토리명을 입력하면 아무 동작도 하지 않습니다.
  
 
- ## CdCheck함수 동작 설명
+ ## cd 명령어
 
  1. command가 cd라면 CdCheck함수를 호출해 path를 입력받고 두가지의 경우로 나눕니다.
 
@@ -62,7 +62,7 @@
 ![상위디렉으로이동](https://user-images.githubusercontent.com/66424045/90889671-89ff7600-e3f3-11ea-95b8-ad1398d8276b.PNG "")
 
 
-## CpCheck 함수 설명
+## cp 명령어
 
 1. cp [복사할 소스파일명] [복사되는 폴더의 경로와 저장할 파일명]을 입력하면   정상적인 경로인지 확인 후 입력한 경로에 복사됩니다.
 
@@ -75,8 +75,10 @@
 
 ![다른경로의 파일 복사](https://user-images.githubusercontent.com/66424045/91271034-86ce0680-e7b4-11ea-97a6-6db47a54e968.PNG "다른경로의 파일 복사")
 
-3. 만약 어느 경우라도 경로가 잘 못 되었다면 아무 동작도 하지 않습니다.
+3. 어느 경우라도 경로가 잘 못 되었다면 아무 동작도 하지 않습니다.
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM1MDM1MjExLDE2MTc1ODg0NDIsLTEzNz
-M2OTUxNDBdfQ==
+eyJoaXN0b3J5IjpbLTk1ODgwNjY3NCw2MzUwMzUyMTEsMTYxNz
+U4ODQ0MiwtMTM3MzY5NTE0MF19
 -->
