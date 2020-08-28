@@ -66,8 +66,6 @@
 
 2. 잘못 된 경로일 경우 아무것도 출력하지 않습니다.
 
-![Cd_Ls](https://user-images.githubusercontent.com/66424045/91539472-5624d300-e954-11ea-9516-3e4ae0152db3.PNG)
-
 
 
 ## cp 명령어
@@ -87,6 +85,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MDgwNTkxMSw2MzUwMzUyMTEsMTYxNz
-U4ODQ0MiwtMTM3MzY5NTE0MF19
+eyJoaXN0b3J5IjpbNjA0MjQ2MTUsNjM1MDM1MjExLDE2MTc1OD
+g0NDIsLTEzNzM2OTUxNDBdfQ==
 -->
