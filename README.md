@@ -44,6 +44,7 @@
 
 2. 잘못 된 경로일 경우 아무것도 출력하지 않습니다.
 
+![ls](https://user-images.githubusercontent.com/66424045/91551976-fe8f6300-e965-11ea-9c6e-b54e0c2179da.PNG)
 
  ## cd 명령어
 
@@ -85,6 +86,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjMxMzg4MSw2MDQyNDYxNSw2MzUwMz
+eyJoaXN0b3J5IjpbMTU1MjgwODk0OCw2MDQyNDYxNSw2MzUwMz
 UyMTEsMTYxNzU4ODQ0MiwtMTM3MzY5NTE0MF19
 -->
