@@ -52,7 +52,8 @@
 
       -[이동하려는 폴더명]이 현재 디렉토리에 존재하지 않으면 경로를 이동하지 않습니다.
    
-![디렉토리 이동](https://user-images.githubusercontent.com/66424045/90889506-473d9e00-e3f3-11ea-86b1-5ec4e29ded84.PNG "디렉토리 이동")
+![cd](https://user-images.githubusercontent.com/66424045/91552378-aa38b300-e966-11ea-8954-249b1aefc708.PNG)
+
 
 
 
@@ -82,6 +83,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDIwMTcwNjYsNjA0MjQ2MTUsNjM1MD
-M1MjExLDE2MTc1ODg0NDIsLTEzNzM2OTUxNDBdfQ==
+eyJoaXN0b3J5IjpbLTkxMjQzNjcxOCwtMTEwMjAxNzA2Niw2MD
+QyNDYxNSw2MzUwMzUyMTEsMTYxNzU4ODQ0MiwtMTM3MzY5NTE0
+MF19
 -->
