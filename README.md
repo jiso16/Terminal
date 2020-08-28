@@ -68,11 +68,14 @@
 
 1. cp [복사할 소스파일명] [복사되는 폴더의 경로와 저장할 파일명]을 입력하면   정상적인 경로인지 확인 후 입력한 경로에 복사됩니다.
 
-![현재경로의 파일 복사](https://user-images.githubusercontent.com/66424045/91271575-5dfa4100-e7b5-11ea-8456-08a8f2c41ed3.PNG  "현재경로의 파일복사")
+   -복사할 소스파일이 현재 경로에 존재할 경우
+  
+![cp1](https://user-images.githubusercontent.com/66424045/91552578-000d5b00-e967-11ea-9132-da07598db1d6.PNG)
 
 
 
-2.  cp [복사할 소스 파일의 경로] [복사되는 폴더의 경로와 저장할 파일명]을 입력하면 정상적인 경로인지 확인 후 입력한 경로에 파일이 복사됩니다.
+
+3.  cp [복사할 소스 파일의 경로] [복사되는 폴더의 경로와 저장할 파일명]을 입력하면 정상적인 경로인지 확인 후 입력한 경로에 파일이 복사됩니다.
 
 
 ![다른경로의 파일 복사](https://user-images.githubusercontent.com/66424045/91271034-86ce0680-e7b4-11ea-97a6-6db47a54e968.PNG "다른경로의 파일 복사")
@@ -81,7 +84,7 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4NTg2MjU0NCwtMTEwMjAxNzA2Niw2MD
-QyNDYxNSw2MzUwMzUyMTEsMTYxNzU4ODQ0MiwtMTM3MzY5NTE0
-MF19
+eyJoaXN0b3J5IjpbLTg3NjQwNTIwLC0xMTAyMDE3MDY2LDYwND
+I0NjE1LDYzNTAzNTIxMSwxNjE3NTg4NDQyLC0xMzczNjk1MTQw
+XX0=
 -->
