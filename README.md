@@ -48,13 +48,9 @@
 
  ## cd 명령어
 
- 1. command가 cd라면 CdCheck함수를 호출해 path를 입력받고 두가지의 경우로 나눕니다.
+ 1. cd [이동하려는 폴더명]을 입력하면 존재하는 폴더인지 확인 후 경로를 이동합니다.
 
-  - path가 "이동하려는 폴더명" 일 때
-
-    -path가 현재 디렉토리에 있는 폴더명이 맞는지 확인 후 맞으면 그 경로로 이동합니다.
-
-    -path가 현재 디렉토리에 있는 폴더명이 아니라면 경로를 이동하지 않습니다.
+      -[이동하려는 폴더명]이 현재 디렉토리에 존재하지 않으면 경로를 이동하지 않습니다.
    
 ![디렉토리 이동](https://user-images.githubusercontent.com/66424045/90889506-473d9e00-e3f3-11ea-86b1-5ec4e29ded84.PNG "디렉토리 이동")
 
@@ -86,6 +82,6 @@
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MjgwODk0OCw2MDQyNDYxNSw2MzUwMz
-UyMTEsMTYxNzU4ODQ0MiwtMTM3MzY5NTE0MF19
+eyJoaXN0b3J5IjpbLTExMDIwMTcwNjYsNjA0MjQ2MTUsNjM1MD
+M1MjExLDE2MTc1ODg0NDIsLTEzNzM2OTUxNDBdfQ==
 -->
